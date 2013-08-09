@@ -1,0 +1,23 @@
+{
+  "name": "Boglehead friends",
+  "version": "0.1",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://www.bogleheads.org/*"],
+      // "css": ["mystyles.css"],
+      // "js": ["jquery.js", "myscript.js"]
+      "js": ["jquery-2.0.3.min.js", "myscript.js"]
+    }
+  ],
+  // "background": {
+  //   "scripts": ["background.js"],
+  //   "persistent": false
+  // },
+  "browser_action": {
+    "default_title": "Boglehead friends"
+  },
+  "manifest_version": 2
+}
